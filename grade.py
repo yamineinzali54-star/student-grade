@@ -1,8 +1,13 @@
 name = input("Enter student name: ")
-mark1 = float(input("Enter first subject mark: "))
-mark2 = float(input("Enter second subject mark: "))
+mark1 = int(input("Enter first subject mark: "))
+mark2 = int(input("Enter second subject mark: "))
 
-avg_mark = (mark1 + mark2) / 2
+average = (mark1 + mark2) / 2
 
-print(f"Student Name: {name}")
-print(f"Average Mark: {avg_mark}")
+print("Student Name:", name)
+print("Average Mark:", average)
+
+if average >= 50:
+    print("Result: Pass")
+else:
+    print("Result: Fail")
